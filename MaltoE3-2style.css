@@ -1,0 +1,212 @@
+body {
+   background-color: rgb(219, 219, 219);
+   background-image: url('./assets/gradient.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #f5f5f5;
+}
+
+/* inner container */
+.webpage {
+    margin: 0 1.5rem;
+    padding: 0 2.5rem;
+}
+
+/* fonts */
+.montserrat-light {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.montserrat-medium {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-heavy {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.montserrat-block {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* icons (in clickable divs) */
+
+.github { background-image: url('./assets/gh-icon.png');}
+.bl-logo {filter: invert(0.88);}
+.tableau { background-image: url('./assets/tb-icon.png');}
+.facebook { background-image: url('./assets/fb-icon.png');}
+.instagram { background-image: url('./assets/ig-icon.png');}
+.linkedin { background-image: url('./assets/li-icon.png');}
+
+/* heading bar */
+#name-bar {
+    background-color: #000000;
+    color: #f5f5f5;
+    position: fixed;
+    text-align: center;
+    align-content: center;
+    top: 0;
+    left: 0;
+    height: 96px;
+    width: 100%;
+    z-index: 1;
+}
+
+.border { border: 1px solid white;}
+
+#details { margin-top: 7rem; line-height: 1.8; }
+
+/* top group */
+
+.bg-overlay {
+    background-color: #f5f5f5;
+    opacity: 0.3;
+}
+
+#photo-and-motto {
+    float: right;
+    width: 50%;
+    text-align: center; 
+    margin-top: 1.5rem;
+}
+
+#educational-background > h2 { padding-top: 1rem; }
+
+.motto {
+    margin: 1.5rem 4rem;
+    border-top: 0.25rem solid #f5f5f5;
+    border-bottom: 0.25rem solid #f5f5f5;
+    padding: 1rem;
+}
+
+#further-details { clear: both; }
+
+#awards { margin: 2.5rem 0; }
+
+.flex-container { /* image group of awards*/
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+}
+
+#course-choice-reason {
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    margin: 3.5rem 4rem;
+}
+
+table { width: 85%; margin: 0 4rem; }
+ 
+.project-one, .project-two, .project-three {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.talents, .talent-logos, .container-one, .container-two { display: flex; }
+
+.talents { justify-content: space-evenly; align-items: center; }
+
+.talent-logos {
+    flex-direction: column;
+    gap: 36px;
+    padding: 0 5rem;
+}
+
+.container-one, .container-two {
+    gap: 36px;
+    justify-content: space-around;
+}
+
+.hyperlink {
+    position: relative;
+    background-color: inherit;
+    border-radius: 100%;
+    display: inline-block;
+    width: 3rem; 
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hyperlink > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 100%;
+    height: 3rem; 
+    width: 3rem;    
+    cursor: pointer;
+}
+
+.project-two, .project-three { margin-top: 1rem; }
+
+.goal > p {text-align: center;}
+
+.talent { margin-left: 2rem; }
+
+/* bottom group (contact + socmed) */
+
+.bottom-group, .icon-group, .contact-info { 
+    display: flex; 
+    gap: 26px;
+}
+
+.bottom-group {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2.5rem 0 4rem;
+}
+
+.icon-group {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.contact-info {
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    gap: 8px;
+}
+
+.flexrow-item-one, .flexrow-item-two, .flexrow-item-three, .flexrow-item-four {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.flex-item-1, .flex-item-2, .flex-item-3 { 
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+} 
+
+/* some simple animations for icon affordance */
+
+/* targets "p" siblings of "div.hyperlink" items to push the paragraphs eastward. */
+.hyperlink:hover ~ p {
+    margin-left: 1rem;
+    animation-duration: 800ms;
+}
+
+.hyperlink:hover, .email:hover { opacity: 0.75; }
+
+.email:hover { border-bottom: 2px solid white; }
+
+.socmed:hover { opacity: 0.65; border: 0; }
